@@ -1,0 +1,48 @@
+/* ---------- giphy content ---------- */
+
+
+body {
+  background-image: url('../img/wallpaper-bonus.png');
+  background-repeat: repeat;
+}
+
+body ::selection {
+  background: #F7EF81;
+}
+
+h1 {
+  text-align: center;
+  font-size: 7em;
+  font-family: 'Permanent Marker', cursive;
+  color: #DE6C83;
+}
+
+#giphy {
+  min-width: 100%;
+}
+
+  /* ---- grid ---- */
+
+  /* clear fix */
+  .grid:after {
+    // content: '';
+    display: block;
+    clear: both;
+  }
+
+  /* ---- .grid-item ---- */
+
+  .grid-sizer,
+  .grid-item {
+    width: 33.3333%;
+  }
+
+  .grid-item {
+    float: left;
+    padding: 10px;
+  }
+
+  .grid-item img {
+    display: block;
+    max-width: 100%;
+  }

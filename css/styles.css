@@ -1,0 +1,170 @@
+body {
+  font-family: 'Muli', sans-serif;
+  text-transform: uppercase;
+}
+body ::selection {
+  background: #F7EF81;
+}
+
+/* ---------- header ---------- */
+header {
+  /* background images */
+  background-image: url("../img/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+header .pink-bckg {
+  background-color: rgba(255, 56, 199, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  /*  cover icon:  */
+}
+header .pink-bckg h1 {
+  text-align: center;
+  font-size: 4em;
+  font-family: "Permanent Marker", cursive;
+}
+@media only screen and (min-width: 768px) {
+  header .pink-bckg h1 {
+    font-size: 10em;
+    margin: 0;
+  }
+}
+header .pink-bckg p {
+  margin: 3em 0;
+  font-family: "East Sea Dokdo", cursive;
+  font-size: 2.5em;
+}
+@media only screen and (min-width: 768px) {
+  header .pink-bckg p {
+    font-size: 5em;
+    margin: 1em 0;
+  }
+}
+header .pink-bckg a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  color: #FFF;
+}
+header .pink-bckg a:hover {
+  text-decoration: none;
+}
+header .pink-bckg a .icon {
+  margin-bottom: 1em;
+  width: 50px;
+  height: auto;
+}
+
+/* ---------- main content ---------- */
+main {
+  /* background images */
+  background-image: url("../img/wallpaper.jpg");
+  background-repeat: repeat;
+  padding: 20em 0;
+}
+
+/* ---------- quote content ---------- */
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+}
+#app div {
+  background-color: #E8B4BC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0;
+}
+@media only screen and (min-width: 768px) {
+  #app div {
+    padding: 2em;
+  }
+}
+#app div p {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin-top: 2em;
+  letter-spacing: 3px;
+  color: #484848;
+  text-align: center;
+}
+#app div h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "East Sea Dokdo", cursive;
+  font-size: 4em;
+  line-height: 1em;
+  margin: 0.5em;
+  color: #F5E3E0;
+  text-shadow: 1px 1px 2px #000;
+  height: 350px;
+}
+@media only screen and (min-width: 768px) {
+  #app div h2 {
+    font-size: 5em;
+    line-height: 1em;
+  }
+}
+#app div button {
+  width: 90%;
+  margin-bottom: 5em;
+}
+@media only screen and (min-width: 768px) {
+  #app div button {
+    width: 30%;
+  }
+}
+#app div .btn-info {
+  background-color: #DE6C83;
+  border-color: #DE6C83;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+#app div .btn-info:hover {
+  background-color: #a83e56;
+}
+
+/* ---------- footer ---------- */
+footer {
+  font-family: "East Sea Dokdo", cursive;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  background-color: #D782BA;
+}
+footer a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #FCF6BD !important;
+}
+footer a img {
+  width: 100px;
+  height: 70px;
+}
+footer h2 {
+  font-size: 1.6em;
+  color: #fff;
+  text-align: right;
+}
+
+/*# sourceMappingURL=styles.css.map */

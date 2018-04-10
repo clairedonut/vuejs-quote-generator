@@ -1,0 +1,195 @@
+// variables
+
+$title: 'Permanent Marker', cursive;
+$title-sub: 'East Sea Dokdo', cursive;
+$title-bckg: rgba(255, 56, 199, 0.4);
+
+$quote: #F5E3E0;
+$quote-font: 'East Sea Dokdo', cursive;
+$quote-bckg: #E8B4BC;
+
+$button: #DE6C83;
+
+// ----- media queries:
+$min-break-small: "only screen and (min-width : 576px)";
+$min-break-medium: "only screen and (min-width : 768px)";
+$min-break-large: "only screen and (min-width : 992px)";
+$min-break-xlarge: "only screen and (min-width : 1200px)";
+
+$max-break-small: "only screen and (max-width : 576px)";
+
+// mixins
+
+@mixin flex-row($horizontal,$vertical) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $horizontal;
+  align-items: $vertical;
+}
+
+@mixin flex-column($horizontal,$vertical) {
+  display: flex;
+  flex-direction: column;
+  align-items: $horizontal;
+  justify-content: $vertical;
+}
+
+@mixin background($url, $repeat) { /* background images */
+  background-image: url($url);
+  background-repeat: $repeat;
+}
+
+// styling properties
+
+body {
+  font-family: 'Muli', sans-serif;
+  text-transform: uppercase;
+  ::selection {
+    background: #F7EF81;
+  }
+}
+
+
+/* ---------- header ---------- */
+
+header {
+  @include background('../img/cover.jpg', no-repeat);
+  background-size: cover;
+  background-position: center right ;
+  .pink-bckg {
+    background-color: $title-bckg;
+    @include flex-column(center,center);
+    margin: 0;
+    width: 100%;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    h1 {
+      text-align: center;
+      font-size: 4em;
+      font-family: $title;
+      @media #{$min-break-medium} {
+        font-size: 10em;
+        margin: 0;
+      }
+    }
+    p {
+     margin: 3em 0;
+      font-family: $title-sub;
+      font-size: 2.5em;
+      @media #{$min-break-medium} {
+        font-size: 5em;
+        margin: 1em 0;
+      }
+    }
+    /*  cover icon:  */
+    a {
+      @include flex-column(center,center);
+      padding: 2em;
+      color: #FFF;
+      &:hover {
+        text-decoration: none;
+      }
+      .icon {
+        margin-bottom: 1em;
+        width: 50px;
+        height: auto;
+      }
+    }
+  }
+}
+
+/* ---------- main content ---------- */
+
+main {
+  @include background('../img/wallpaper.jpg', repeat);
+  padding: 20em 0;
+}
+
+/* ---------- quote content ---------- */
+
+#app {
+  @include flex-column(center,center);
+  // background-color: rgba(255, 255, 255, 0.1);
+  min-width: 100%;
+
+  div {
+    background-color: $quote-bckg;
+    @include flex-column(center,center);
+    padding: 2em 0;
+    @media #{$min-break-medium} {
+      padding: 2em;
+    }
+
+    p {
+      text-transform: uppercase;
+      font-size: 1.2em;
+      margin-top: 2em;
+      letter-spacing: 3px;
+      color: #484848;
+      text-align: center;
+    }
+
+    h2 {
+      @include flex-row(center,center);
+      font-family: $quote-font;
+      font-size: 4em;
+      line-height: 1em;
+      margin: 0.5em;
+      color: $quote;
+      text-shadow: 1px 1px 2px #000;
+      height: 350px;
+      @media #{$min-break-medium} {
+        font-size: 5em;
+        line-height: 1em;
+      }
+    }
+
+    button {
+      width: 90%;
+      margin-bottom: 5em;
+      @media #{$min-break-medium} {
+        width: 30%;
+      }
+    }
+    .btn-info {
+      background-color: $button;
+      border-color: $button;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+
+      &:hover {
+        background-color: rgb(168, 62, 86);
+
+      }
+    }
+  }
+}
+
+
+/* ---------- footer ---------- */
+
+footer {
+  font-family: $quote-font;
+  text-transform: uppercase;
+  padding: 0.5em 1em ;
+  background-color: #D782BA;
+  a {
+    @include flex-row(flex-end,center) ;
+    &:hover {
+      text-decoration: none;
+      color: #FCF6BD !important;
+    }
+    img {
+      width: 100px;
+      height: 70px;
+    }
+  }
+  h2 {
+    font-size: 1.6em;
+    color: #fff;
+    text-align: right;
+    &:hover {
+    }
+  }
+
+}
