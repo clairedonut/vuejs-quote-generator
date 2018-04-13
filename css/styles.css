@@ -52,7 +52,7 @@ header .pink-bckg h1 {
 header .pink-bckg p {
   margin: 3em 0;
   font-family: "East Sea Dokdo", cursive;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 @media only screen and (min-width: 768px) {
   header .pink-bckg p {
@@ -156,10 +156,10 @@ main {
       -ms-flex-align: center;
           align-items: center;
   font-family: "East Sea Dokdo", cursive;
-  font-size: 4em;
+  font-size: 3em;
   line-height: 1em;
   margin: 0.5em;
-  color: #F5E3E0;
+  color: #fff;
   text-shadow: 1px 1px 2px #000;
   height: 350px;
 }
