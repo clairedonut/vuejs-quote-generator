@@ -5,7 +5,7 @@ var header = new Vue({
   data: {
     title: 'Pug4Life',
     icon: './img/pug-icon.png',
-    introduction: '#inspirationalpugjokes',
+    introduction: '#littlepugjokes',
     link: '#app',
     show: true,
     cls: 'infinite animated bounce',
@@ -21,7 +21,7 @@ var header = new Vue({
 var app = new Vue ({
   el: '#app',
   data: {
-    guideline: 'Click the button to get a joke!',
+    guideline: 'Click the button below to get a joke!',
     button: 'Get a Joke!',
     quotes: [
       'A user interface is like a joke. If you have to explain it, it’s not that good.',
